@@ -1,10 +1,10 @@
 import app from '@/app.js'
-import { PORT } from '@/config.js'
+import env from '@/env.js'
 import { serve } from '@hono/node-server'
 
 serve({
   fetch: app.fetch,
-  port: Number(PORT),
+  port: env.PORT,
 })
 
-console.log(`Server is running on port ${PORT}`)
+console.log(`Server is running on port ${env.PORT}`)
