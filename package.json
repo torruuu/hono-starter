@@ -9,6 +9,7 @@
     "start": "node dist/index.js",
     "dev": "tsx watch src/index.ts",
     "lint": "eslint src/",
+    "typecheck": "tsc --noEmit",
     "lint:fix": "eslint src/ --fix",
     "prepare": "husky || true"
   },
